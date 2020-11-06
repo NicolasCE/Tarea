@@ -17,6 +17,27 @@
                 <h3 class="center">App Links</h3>
                 <h6 class="center">Guardar tus paginas Web</h6>
 
+                <p class="red-text">
+                    <?php 
+                    session_start();
+                    if(isset($_SESSION['error'])) {
+                        echo $_SESSION['error'];
+                        unset($_SESSION['error']);
+                    
+                    }
+                    ?>
+                </p>
+
+                <p class="green-text">
+                    <?php 
+                    if(isset($_SESSION['respuesta'])) {
+                        echo $_SESSION['respuesta'];
+                        unset($_SESSION['respuesta']);
+                    
+                    }
+                    ?>
+                </p>
+
                 <form action="controllers/RegistroController.php" method="POST">
                     <div class="input-field">
                         <input id="email" type="email" name="email">
@@ -33,7 +54,7 @@
                     
                     <button class="btn black">Registrar Cuenta</button>
                         <p class="center">
-                            <a href="index.php"></a>
+                            <a href="index.php">Volver</a>
                         </p>
                 </form>
             </div>  
