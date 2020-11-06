@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body class="#e0e0e0 grey lighten-2">
 
 <div class="container">
         <div class="row">

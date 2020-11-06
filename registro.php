@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="#e0e0e0 grey lighten-2">
 <div class="container">
         <div class="row">
             <div class="col l4 m4 s12">
